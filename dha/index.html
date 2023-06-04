@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="e-homeaffairs.jpg" alt="dha">
+    </header>
+
+    <h1>Register</h1>
+    <form class="form" action="#!">
+        
+        <label for="fname">first name</label>
+        <input type="text" id="fname">
+        <label for="lname">last name</label>
+        <input type="text" id="lname">
+        <label for="id-input">ID number</label>
+        <input type="text" id="id-input">
+        <label for="phone">phone number</label>
+        <input type="text" id="phone">
+        <label for="password">password</label>
+        <input type="text" id="password">
+        <div class="check">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <span id="remember">remember me</span>
+        </div>
+        <button type="submit" id="submit">submit</button>
+
+        <div class="text">
+            <p class="error-text1 inactive">Invalid ID. Field must contain 13 digits</p>
+            <p class="error-text2 inactive">Invalid ID. Field must only consist of digits</p>
+            <p class="error-text3 inactive">Invalid ID. Check month</p>
+            <p class="error-text4 inactive">Invalid ID. Check day</p>
+            <p class="success inactive">ID Valid. Submitted!</p>
+        </div>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
